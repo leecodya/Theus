@@ -1,0 +1,5 @@
+Godaddy info:
+customer #: 179131058
+username: terrynealtheus6
+password: Terrynealtheus6
+pin: 6379

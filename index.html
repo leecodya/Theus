@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114041748-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-114041748-1');
+		</script>
+
+		<title>Theus Floor Covering</title>
+		<meta charset="utf-8">
+		<meta name="keywords" content="Theus Floor Covering, installation, flooring, flooring installation, Middle Georgia, Macon, Ga, Warner Robins, Ga, local, contractor, flooring contractor, flooring contractor macon, flooring contractor local, flooring contractor warner robins, floor installer near me, floor installation near me, floor contractor near me">
+		<meta name="description" content="Welcome to Theus Floor Covering! We are located and operate out of the middle Georgia area. At Theus Floor Covering, we understand that finding the perfect combination of quality and affordability can be difficult. With over 80 years combined experience with flooring installations between our staff, no job is too big and none are too small. So, we have made it our goal to provide middle Georgia and the surrounding areas with the best flooring experience possible. Take a look through our website to see what fits your needs best!">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style.css" rel="stylesheet" />
+		<!-- Latest compiled and minified CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+		<script>
+			var app = angular.module("myApp", ["ngRoute"]);
+			app.config(function($routeProvider) {
+				$routeProvider
+				.when("/home", {
+					templateUrl : "home.htm"
+				})
+				.when("/about", {
+					templateUrl : "about.htm"
+				})
+				.when("/flooring", {
+					templateUrl : "flooring.htm"
+				})
+				.when("/staff", {
+					templateUrl : "staff.htm"
+				})
+				.when("/gallery", {
+					templateUrl : "gallery.htm"
+				})
+				.when("/reviews", {
+					templateUrl : "reviews.htm"
+				})
+				.when("/contact", {
+					templateUrl : "contact.htm"
+				})
+				.otherwise({
+					templateUrl : "home.htm"
+				});
+			});
+		</script>
+	</head>
+	<body ng-app="myApp">
+		<!--Header Section-->
+		<header class="container">
+			<div class="row">
+				<!--Logo-->
+				<div class="col-sm-4">
+					<a href="index.html"><img src="img/main/logoClear2.png" alt="Logo" class="logo img-responsive"></a>
+				</div>
+				<!--White space-->
+				<div class="col-sm-4"></div>
+				<!--Contact Information-->
+				<div class="col-sm-4">
+					<h2 class="header-phone"><span>Phone: </span><a href="tel:478-397-6121">478-397-6121</a></h2>
+				</div>				
+			</div>
+		</header>
+		<!--Nav Section-->
+		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="150">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:black;">
+						<span class="icon-bar" style="background-color:#4285f4;"></span>
+						<span class="icon-bar" style="background-color:#4285f4;"></span> 
+						<span class="icon-bar" style="background-color:#4285f4;"></span> 
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar"> 
+					<ul class="nav navbar-nav social-media">
+						<li>
+							<a href="https://www.facebook.com/Theus-Floor-Covering-789011537945255/" target="_blank">
+								<img src="img/main/facebook.png" class="social-media-img" alt="Facebook">
+								<div class="overlay"></div>
+							</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right nav-pills nav-stacked">
+						<li onclick="closeMenu()"><a data-toggle="pill" href="#home">Home</a></li>
+						<li onclick="closeMenu()"><a data-toggle="pill" href="#about">About</a></li>
+						<li onclick="closeMenu()"><a data-toggle="pill" href="#flooring">Flooring</a></li>
+						<li onclick="closeMenu()"><a data-toggle="pill" href="#staff">Staff</a></li>
+						<li onclick="closeMenu()"><a data-toggle="pill" href="#gallery">Gallery</a></li>
+						<li onclick="closeMenu()"><a data-toggle="pill" href="#reviews">Reviews</a></li>
+						<li onclick="closeMenu()"><a data-toggle="pill" href="#contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<!--Page Content-->
+			<div class="tab-content">
+				<div ng-view></div>
+			</div>
+		</div>
+		<!--Footer Section-->
+		<footer>
+			<div class="row">
+				<div class="col-sm-4">
+					<h4>Theus Floor Covering</h4>
+					<hr>
+					<p>Phone: <a href="tel:478-397-6121">478-397-6121</a></p>
+				</div>
+				<div class="col-sm-4">
+					<h4>Connect With Us</h4>
+					<hr>
+					<p><a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+				</div>
+				<div class="col-sm-4">
+					<h4>Quick Links</h4>
+					<hr>
+					<div class="row">
+						<div class="col-sm-6">
+							<p><a data-toggle="pill" href="#">Home</a></p>
+						</div>
+						<div class="col-sm-6">
+							<p onclick="closeMenu()"><a data-toggle="pill" href="#about">About</a></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<p onclick="closeMenu()"><a data-toggle="pill" href="#flooring">Flooring</a></p>
+						</div>
+						<div class="col-sm-6">
+							<p onclick="closeMenu()"><a data-toggle="pill" href="#staff">Staff</a></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<p onclick="closeMenu()"><a data-toggle="pill" href="#gallery">Gallery</a></p>
+						</div>
+						<div class="col-sm-6">
+							<p onclick="closeMenu()"><a data-toggle="pill" href="#reviews">Reviews</a></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<p onclick="closeMenu()"><a data-toggle="pill" href="#contact">Contact Us</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script>		
+			var closeMenu = function()  {
+			  var nav = document.getElementById('myNavbar');
+			  
+			  nav.classList.remove('in');
+			  document.body.scrollTop = 0; // For Chrome, Safari and Opera
+			  document.documentElement.scrollTop = 0; // For IE and Firefox
+			}		
+		</script>
+	</body>
+</html>
